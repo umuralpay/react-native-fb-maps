@@ -19,6 +19,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactNativeMapsFacebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeMapsFacebookTests.m */; };
 		635A3F3F9AC6DAE0259FC07F /* libPods-reactNativeMapsFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B43DA390C8F3ED2B547F6D2 /* libPods-reactNativeMapsFacebook.a */; };
+		80846116242CBF9D00254F43 /* AirGoogleMaps in Resources */ = {isa = PBXBuildFile; fileRef = 80846115242CBF9D00254F43 /* AirGoogleMaps */; };
 		EABFBE5E8BAB8DDE52CC3FF6 /* libPods-reactNativeMapsFacebookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1192040840D8943E480D2E5F /* libPods-reactNativeMapsFacebookTests.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		2D02E4901E0B4A5D006451C7 /* reactNativeMapsFacebook-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeMapsFacebook-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D46CDEEF8E1DCE017B6203F /* libPods-reactNativeMapsFacebook-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeMapsFacebook-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B43DA390C8F3ED2B547F6D2 /* libPods-reactNativeMapsFacebook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeMapsFacebook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80846115242CBF9D00254F43 /* AirGoogleMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirGoogleMaps; path = "../node_modules/react-native-maps/lib/ios/AirGoogleMaps"; sourceTree = "<group>"; };
 		93F12B4491031FA9E23A8604 /* libPods-reactNativeMapsFacebook-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeMapsFacebook-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9789557DA94616535E83C998 /* Pods-reactNativeMapsFacebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeMapsFacebookTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeMapsFacebookTests/Pods-reactNativeMapsFacebookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A59B338C04C53F9C8DE848D0 /* Pods-reactNativeMapsFacebook-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeMapsFacebook-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeMapsFacebook-tvOS/Pods-reactNativeMapsFacebook-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				80846115242CBF9D00254F43 /* AirGoogleMaps */,
 				13B07FAE1A68108700A75B9A /* reactNativeMapsFacebook */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* reactNativeMapsFacebookTests */,
@@ -340,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80846116242CBF9D00254F43 /* AirGoogleMaps in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -486,6 +490,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-reactNativeMapsFacebook/Pods-reactNativeMapsFacebook-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -505,6 +510,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
